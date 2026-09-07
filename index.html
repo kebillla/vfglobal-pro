@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="meta.title">VolFix Global — объёмный анализ для практикующих трейдеров</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="Кластерный анализ, дельта и поток ордеров. Закрытая группа для трейдеров с опытом и доступ к VolFix на 2 недели.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" data-i18n-attr="content:meta.title" content="VolFix Global — объёмный анализ для практикующих трейдеров">
+<meta property="og:description" data-i18n-attr="content:meta.description" content="Кластерный анализ, дельта и поток ордеров.">
+<meta property="og:image" content="assets/img/footprint.svg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23ffffff'/><rect x='7' y='16' width='4' height='9' fill='%231d1d1f'/><rect x='14' y='10' width='4' height='15' fill='%231d1d1f'/><rect x='21' y='6' width='4' height='19' fill='%230071e3'/></svg>">
+<link rel="preload" href="assets/img/footprint.svg?v=2" as="image">
+<link rel="stylesheet" href="assets/css/styles.css?v=2">
+<script src="assets/js/config.js?v=2"></script>
+<script src="assets/js/i18n.js?v=2"></script>
+<script src="assets/js/analytics.js?v=2" defer></script>
+<script src="assets/js/app.js?v=2" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 20 20"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 20 20"><path d="M4.5 10h11" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21 4.5 2.9 11.4c-1 .4-1 1.8.1 2l4.5 1.3 1.7 5.1c.3.8 1.3 1 1.9.4l2.5-2.4 4.6 3.4c.7.5 1.7.1 1.9-.7L22.9 5.6c.2-.9-.7-1.5-1.5-1.1Z" fill="currentColor"/></symbol>
+</svg>
+
+<!-- =============================== NAV ================================ -->
+<header class="nav" id="hdr">
+  <div class="wrap wrap--wide nav__in">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      VolFix <span class="brand__sfx">Global</span>
+    </a>
+    <nav class="nav__links" aria-label="main">
+      <a href="#platform" data-i18n="nav.platform">Платформа</a>
+      <a href="#group" data-i18n="nav.group">Группа</a>
+      <a href="#fit" data-i18n="nav.fit">Кому</a>
+      <a href="#price" data-i18n="nav.price">Цена</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Язык / Тіл">
+        <button type="button" class="lang__btn" data-lang="ru">RU</button>
+        <button type="button" class="lang__btn" data-lang="kk">KZ</button>
+      </div>
+      <button type="button" class="btn js-cta" data-cta="nav" data-i18n="nav.cta">Получить доступ</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- =============================== HERO =============================== -->
+<section class="hero">
+  <div class="wrap">
+    <p class="hero__eyebrow" data-i18n="hero.eyebrow">Для практикующих трейдеров</p>
+    <h1 class="hero__h1" data-i18n="hero.h1">Объём. Дельта. Поток ордеров.</h1>
+    <p class="hero__h1b" data-i18n="hero.h1b">Всё, чего не видно на свечном графике.</p>
+    <p class="hero__sub" data-i18n="hero.sub">Закрытая группа для трейдеров с опытом и доступ к VolFix — платформе объёмного анализа с 20-летней историей. Первые 2 недели бесплатно.</p>
+    <div class="hero__cta">
+      <button type="button" class="btn btn--lg js-cta" data-cta="hero" data-i18n="hero.cta">Получить доступ</button>
+      <a class="tlink" href="#platform" data-i18n="hero.more">Что внутри</a>
+    </div>
+    <p class="hero__note" data-i18n="hero.note">Доступ в Telegram — сразу после оплаты</p>
+  </div>
+
+  <figure class="shot">
+    <div class="shot__frame">
+      <img src="assets/img/footprint.svg?v=2" width="1680" height="920" alt="Footprint: bid × ask">
+    </div>
+    <figcaption class="shot__cap" data-i18n="hero.caption">Футпринт: bid × ask на каждом уровне цены. Цветом выделены дисбалансы, снизу — дельта по барам.</figcaption>
+  </figure>
+</section>
+
+<!-- ============================== SPECS =============================== -->
+<section class="sec" style="padding-top:clamp(56px,7vw,88px)">
+  <div class="wrap wrap--wide">
+    <div class="specs">
+      <div class="spec"><b data-i18n="specs.1n">20</b><span data-i18n="specs.1t">лет платформе VolFix</span></div>
+      <div class="spec"><b data-i18n="specs.2n">3</b><span data-i18n="specs.2t">биржи запустил в СНГ</span></div>
+      <div class="spec"><b data-i18n="specs.3n">2 недели</b><span data-i18n="specs.3t">бесплатного доступа</span></div>
+      <div class="spec"><b data-i18n="specs.4n">0</b><span data-i18n="specs.4t">сигналов — только метод</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PLATFORM ============================= -->
+<section class="sec sec--dark" id="platform">
+  <div class="wrap wrap--wide center">
+    <p class="eyebrow" data-i18n="plat.eyebrow">Платформа</p>
+    <h2 class="h2" data-i18n="plat.h2">Видно, кто на самом деле двигает цену.</h2>
+    <p class="lead" data-i18n="plat.sub">Свеча показывает результат. Объём показывает, как он получился: где агрессор бил в стакан, где его поглотили и какое движение осталось без подтверждения.</p>
+
+    <div class="feats">
+      <article class="feat">
+        <h3 data-i18n="plat.f1.t">Кластеры и футпринт</h3>
+        <p data-i18n="plat.f1.d">Bid × ask на каждом уровне. Дисбалансы и поглощения видны до того, как цена уйдёт.</p>
+      </article>
+      <article class="feat">
+        <h3 data-i18n="plat.f2.t">Дельта и накопление</h3>
+        <p data-i18n="plat.f2.d">Разница агрессивных покупок и продаж: по бару, по сессии, накопительно.</p>
+      </article>
+      <article class="feat">
+        <h3 data-i18n="plat.f3.t">Профиль объёма</h3>
+        <p data-i18n="plat.f3.d">POC, область стоимости, объёмные узлы и пустоты.</p>
+      </article>
+      <article class="feat">
+        <h3 data-i18n="plat.f4.t">Лента и ликвидность</h3>
+        <p data-i18n="plat.f4.d">Крупные сделки, айсберги, поведение стакана.</p>
+      </article>
+    </div>
+    <p class="plat__note" data-i18n="plat.note">Профессиональный инструмент, а не индикатор поверх графика.</p>
+  </div>
+</section>
+
+<!-- ============================== GROUP =============================== -->
+<section class="sec sec--alt" id="group">
+  <div class="wrap wrap--wide center">
+    <p class="eyebrow" data-i18n="group.eyebrow">Закрытая группа</p>
+    <h2 class="h2" data-i18n="group.h2">Среда, а не курс.</h2>
+    <p class="lead" data-i18n="group.sub">Никаких уроков для начинающих. Ежедневная работа с рынком в кругу тех, кто уже торгует.</p>
+
+    <div class="cards">
+      <article class="card">
+        <h3 data-i18n="group.c1.t">Разборы сделок по цифрам</h3>
+        <p data-i18n="group.c1.d">Свои и чужие входы — на футпринте и профиле. Почему сработало, почему нет и что было видно заранее.</p>
+      </article>
+      <article class="card">
+        <h3 data-i18n="group.c2.t">Гипотезы и проверка</h3>
+        <p data-i18n="group.c2.d">Идея формулируется, проверяется на данных и либо остаётся в арсенале, либо отсеивается.</p>
+      </article>
+      <article class="card">
+        <h3 data-i18n="group.c3.t">Регламент риска</h3>
+        <p data-i18n="group.c3.d">Размер позиции, серии убытков, дневной стоп. То, что отличает торговлю от азарта.</p>
+      </article>
+    </div>
+    <p class="note" data-i18n="group.note">Подписка на VolFix на 2 недели включается вместе с доступом в группу.</p>
+  </div>
+</section>
+
+<!-- =============================== FIT ================================ -->
+<section class="sec" id="fit">
+  <div class="wrap center">
+    <p class="eyebrow" data-i18n="fit.eyebrow">Без иллюзий</p>
+    <h2 class="h2" data-i18n="fit.h2">Кому это подойдёт.</h2>
+
+    <div class="fit">
+      <div class="fitbox">
+        <h3 data-i18n="fit.yes">Подойдёт, если</h3>
+        <ul>
+          <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="fit.y1">Вы уже торгуете и знаете, что такое стоп и риск на сделку</span></li>
+          <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="fit.y2">Устали от сигналов и хотите принимать решения самостоятельно</span></li>
+          <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="fit.y3">Свечных паттернов перестало хватать — нужны данные под движением</span></li>
+          <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="fit.y4">Готовы разбирать собственные сделки, а не только чужие</span></li>
+        </ul>
+      </div>
+      <div class="fitbox fitbox--no">
+        <h3 data-i18n="fit.no">Не подойдёт, если</h3>
+        <ul>
+          <li><svg class="mark"><use href="#i-minus"></use></svg><span data-i18n="fit.n1">Вы ещё не открывали сделку — начните с базового потока</span></li>
+          <li><svg class="mark"><use href="#i-minus"></use></svg><span data-i18n="fit.n2">Нужны готовые точки входа и сопровождение под ключ</span></li>
+          <li><svg class="mark"><use href="#i-minus"></use></svg><span data-i18n="fit.n3">Ждёте гарантированной доходности — её здесь никто не обещает</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fit__link"><a class="tlink" href="#" data-link="basic" data-i18n="fit.link">Базовый поток для новичков</a></p>
+  </div>
+</section>
+
+<!-- ============================== EXPERT ============================== -->
+<section class="sec sec--alt" id="expert">
+  <div class="wrap wrap--wide expert">
+    <div class="expert__photo"><svg width="56" height="56"><use href="#i-user"></use></svg></div>
+    <div>
+      <p class="eyebrow" data-i18n="expert.eyebrow">Автор</p>
+      <h2 class="h2" style="margin-bottom:0" data-i18n="expert.h2">Ерлан</h2>
+      <p class="expert__role" data-i18n="expert.role">Трейдер, автор группы</p>
+      <ul class="expert__list">
+        <li data-i18n="expert.b1">В трейдинге с 2008 года. Прошёл несколько полных рыночных циклов — включая те, на которых ломались чужие системы.</li>
+        <li data-i18n="expert.b2">Запустил 3 торговые биржи в СНГ: знает механику исполнения и то, как она искажает картину на графике.</li>
+        <li data-i18n="expert.b3">Ведёт группу как рабочую среду: разборы, гипотезы, статистика. Не сигналы.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== PRICE ============================== -->
+<section class="sec" id="price">
+  <div class="wrap center">
+    <p class="eyebrow" data-i18n="price.eyebrow">Доступ</p>
+    <h2 class="h2" data-i18n="price.h2">Одна подписка. Без апселлов.</h2>
+
+    <div class="pricebox">
+      <div class="price__row">
+        <s data-price-old hidden></s>
+        <b data-price-amount>10 000 ₸</b>
+        <span data-price-period>в мес</span>
+      </div>
+      <span class="seats" data-seats hidden></span>
+
+      <div class="price__cols">
+        <div>
+          <p class="price__t" data-i18n="price.inc">Что входит</p>
+          <ul>
+            <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="price.i1">Закрытая группа для практикующих трейдеров</span></li>
+            <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="price.i2">Разборы сделок на футпринте и профиле объёма</span></li>
+            <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="price.i3">Методика работы с дельтой и дисбалансами</span></li>
+            <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="price.i4">Регламент риска и работа над ошибками</span></li>
+            <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="price.i5">Ответы автора на вопросы по вашим сделкам</span></li>
+          </ul>
+        </div>
+        <div class="bonusbox">
+          <p class="price__t" data-i18n="price.bonus">Бонусом</p>
+          <ul>
+            <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="price.b1">Доступ к VolFix на 2 недели</span></li>
+            <li><svg class="mark"><use href="#i-check"></use></svg><span data-i18n="price.b2">Помощь с настройкой платформы под свой стиль</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn--lg btn--block js-cta" data-cta="pricing" data-i18n="price.cta">Получить доступ</button>
+      <p class="price__note" data-i18n="price.note">Оплата онлайн. Ссылка в группу приходит сразу после оплаты.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================ FAQ =============================== -->
+<section class="sec sec--alt" id="faq">
+  <div class="wrap">
+    <h2 class="h2 center" data-i18n="faq.h2">Вопросы.</h2>
+    <div class="faq">
+      <details class="qa"><summary><span data-i18n="faq.q1">Чем это отличается от сигнального канала?</span></summary><p data-i18n="faq.a1"></p></details>
+      <details class="qa"><summary><span data-i18n="faq.q2">У меня уже есть платформа объёмного анализа. Есть смысл?</span></summary><p data-i18n="faq.a2"></p></details>
+      <details class="qa"><summary><span data-i18n="faq.q3">Нужен ли опыт?</span></summary><p data-i18n="faq.a3"></p></details>
+      <details class="qa"><summary><span data-i18n="faq.q4">Какой капитал нужен?</span></summary><p data-i18n="faq.a4"></p></details>
+      <details class="qa"><summary><span data-i18n="faq.q5">Как быстро дадут доступ?</span></summary><p data-i18n="faq.a5"></p></details>
+      <details class="qa"><summary><span data-i18n="faq.q6">Что будет после 2 недель VolFix?</span></summary><p data-i18n="faq.a6"></p></details>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== FINAL ============================== -->
+<section class="sec sec--final">
+  <div class="wrap">
+    <h2 class="h2" data-i18n="final.h2">Начните видеть рынок целиком.</h2>
+    <p class="lead center" data-i18n="final.sub">Закрытая группа и VolFix на 2 недели.</p>
+    <p style="margin-top:26px"><button type="button" class="btn btn--lg js-cta" data-cta="final" data-i18n="final.cta">Получить доступ</button></p>
+    <p class="final__price" data-price-inline>10 000 ₸ / мес</p>
+  </div>
+</section>
+
+<!-- =============================== RISK =============================== -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="risk">
+      <h3 data-i18n="risk.title">Риски</h3>
+      <p data-i18n="risk.text">Торговля криптовалютой связана с высоким риском. Материалы носят образовательный характер и не являются индивидуальной инвестиционной рекомендацией.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="ftr">
+  <div class="wrap wrap--wide ftr__in">
+    <nav class="ftr__links">
+      <a href="#" data-link="offer" data-i18n="footer.offer">Оферта</a>
+      <a href="#" data-link="privacy" data-i18n="footer.privacy">Конфиденциальность</a>
+      <a href="#" data-link="support" target="_blank" rel="noopener" data-i18n="footer.contact">Telegram</a>
+      <a href="#" data-link="basic" data-i18n="footer.basic">Поток для новичков</a>
+    </nav>
+    <div class="ftr__bottom">
+      <span>© <span data-year>2026</span> VolFix Global. <span data-i18n="footer.rights">Все права защищены.</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================== STICKY MOBILE ========================== -->
+<div class="sticky" id="sticky" hidden>
+  <span class="sticky__price" data-price-inline>10 000 ₸ / мес</span>
+  <button type="button" class="btn js-cta" data-cta="sticky" data-i18n="sticky.cta">Получить доступ</button>
+</div>
+
+<!-- ============================== MODAL =============================== -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__ov" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button type="button" class="modal__x" data-close data-i18n-attr="aria-label:modal.close" aria-label="Закрыть">&times;</button>
+    <div class="modal__bar"><i data-progress></i></div>
+
+    <section class="mstep" data-step="form" hidden>
+      <h2 class="mstep__h" id="modal-title" data-i18n="form.title">Оформление доступа</h2>
+      <p class="mstep__sub" data-i18n="form.sub">Контакты нужны, чтобы отправить ссылку в группу и чек об оплате.</p>
+      <form class="frm" id="lead-form" novalidate>
+        <label class="fld">
+          <span data-i18n="form.name">Имя</span>
+          <input type="text" name="name" autocomplete="name" data-i18n-attr="placeholder:form.name.ph" placeholder="Как к вам обращаться" required>
+          <em class="err" data-err="name"></em>
+        </label>
+        <label class="fld">
+          <span data-i18n="form.phone">Телефон</span>
+          <input type="tel" name="phone" autocomplete="tel" inputmode="tel" data-i18n-attr="placeholder:form.phone.ph" placeholder="+7 700 000 00 00" required>
+          <em class="err" data-err="phone"></em>
+        </label>
+        <label class="fld">
+          <span data-i18n="form.email">Email</span>
+          <input type="email" name="email" autocomplete="email" inputmode="email" data-i18n-attr="placeholder:form.email.ph" placeholder="you@example.com" required>
+          <em class="err" data-err="email"></em>
+        </label>
+        <label class="chk">
+          <input type="checkbox" name="consent" required>
+          <span data-i18n="form.consent">Согласен на обработку персональных данных и с условиями оферты</span>
+        </label>
+        <em class="err" data-err="consent"></em>
+        <button type="submit" class="btn btn--lg btn--block" data-submit><span data-i18n="form.submit">Перейти к оплате</span></button>
+        <p class="frm__total" data-form-total>К оплате: 10 000 ₸</p>
+      </form>
+    </section>
+
+    <section class="mstep" data-step="pay" hidden>
+      <h2 class="mstep__h" data-i18n="pay.title">Оплата</h2>
+      <div class="stub"><p data-i18n="pay.stub"></p></div>
+      <button type="button" class="btn btn--lg btn--block" data-pay-continue data-i18n="pay.continue">Продолжить (демо)</button>
+    </section>
+  </div>
+</div>
+
+</body>
+</html>

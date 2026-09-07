@@ -338,3 +338,10 @@ button{font:inherit;color:inherit}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+/* ---------------------- статус оплаты на странице успеха ------------------ */
+.statusnote{
+  margin:0 auto 22px;max-width:520px;padding:16px 20px;border-radius:14px;
+  background:var(--bg-alt);border:1px solid var(--hair);color:var(--ink-2);font-size:15px;
+}
+.statusnote.is-error{border-color:#f0c000;background:#fff8e5;color:var(--ink)}
